@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="This.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="M1.jpg"
+            alt="Image 1">
+        <img src="M2.jpg"
+            alt="Image 2">
+        <img src="M3.jpg"
+            alt="Image 3">
+        <img src="M4.jpg"
+            alt="Image 4">
+        <img src="M5.jpg"
+            alt="Image 5">
+        <img src="M6.jpg"
+            alt="Image 6">
+        <img src="M7.jpg"
+            alt="Image 7">
+        <img src="M8.jpg"
+            alt="Image 8">
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+    <script src="This.js"></script>
+    
+</body>
+</html>
